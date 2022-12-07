@@ -1,0 +1,19 @@
+
+
+
+  <div class="cards">
+    <div class="wrapper">
+    <%  @produce.each do |produce| %>
+        <div class="card">
+             <img src="http://clv.h-cdn.co/assets/15/22/2048x2048/square-1432664914-strawberry-facts1.jpg">
+            <div class="descriptions">
+               <h1> <%= produce.name %></h1>
+                 <p>
+                    <%= produce.description %>
+                 </p>
+                    <button type="button" class="btn btn-success">More about me!</button>
+            </div>
+        </div>
+    <% end %>
+    </div>
+  </div>
