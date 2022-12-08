@@ -61,11 +61,14 @@ Produce.all.each do |produce|
     unless element.search(".recipe-card-meta__rating-count-number").empty?
       # 4. Create recipe and store it in results
       name = element.search(".card__title-text").text.strip
+      img = element.search(".card__img")[1].attributes["src"].value
+      p img
       details_url = element.attribute("href").value
       details_doc = Nokogiri::HTML(URI.open(details_url).read, nil, "utf-8")
       description = details_doc.search("#article-subheading_2-0").text.strip
+
       # 6. Create a recipe instance and append it to our results array.
-      recipes_array << Recipe.create!(name: name, description: description, url: details_url)
+      recipes_array << Recipe.create!(name: name, description: description, url: details_url, img: img)
     end
   end
   # 7. Select the first 5 recipes at the end when we're sure we have built recipes instances (no articles)
