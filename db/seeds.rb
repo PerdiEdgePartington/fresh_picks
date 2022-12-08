@@ -84,7 +84,7 @@ produce = Produce.new(
   nutrition_fiber: "3g fiber"
 )
 produce.save
-....................................
+
 produce = Produce.new(
   name: "Strawberries",
   description: "Strawberries are bright red, juicy, and sweet. They're an excellent source of vitamin C and manganese and also contain decent amounts of folate (vitamin B9) and potassium. Strawberries are very rich in antioxidants and plant compounds, which may have benefits for heart health and blood sugar control",
@@ -479,6 +479,7 @@ Produce.all.each do |produce|
       # 4. Create recipe and store it in results
       name = element.search(".card__title-text").text.strip
       img = element.search(".card__img")[1].attributes["src"].value
+
       details_url = element.attribute("href").value
       details_doc = Nokogiri::HTML(URI.open(details_url).read, nil, "utf-8")
       description = details_doc.search("#article-subheading_2-0").text.strip
