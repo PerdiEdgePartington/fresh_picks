@@ -25,7 +25,7 @@ produce = Produce.new(
   nutrition_sugar: "19g sugar (naturally occurring)",
   nutrition_fiber: "3g fiber"
 )
-produce1.save
+produce.save
 
 produce = Produce.new(
   name: "Cranberries",
@@ -37,7 +37,7 @@ produce = Produce.new(
   nutrition_sugar: "4g of sugar (naturally occurring)",
   nutrition_fiber: "4g of fiber"
 )
-produce2.save
+produce.save
 
 produce = Produce.new(
   name: "Pears",
@@ -50,7 +50,7 @@ produce = Produce.new(
   nutrition_fiber: "5.52g fiber"
 
 )
-produce3.save
+produce.save
 
 produce = Produce.new(
   name: "Beetroot",
@@ -61,7 +61,7 @@ produce = Produce.new(
   nutrition_carbs: "9.6g of carbohydrate",
   nutrition_fiber: "2.8g fiber"
 )
-produce4.save
+produce.save
 
 produce = Produce.new(
   name: "Carrots",
@@ -460,7 +460,7 @@ produce = Produce.new(
   nutrition_sugar: "3.2g of sugar (naturally occurring)",
   nutrition_fiber: "2.5g fiber"
 )
-produce5.save
+produce.save
 
 
 Produce.all.each do |produce|
@@ -479,7 +479,6 @@ Produce.all.each do |produce|
       # 4. Create recipe and store it in results
       name = element.search(".card__title-text").text.strip
       img = element.search(".card__img")[1].attributes["src"].value
-      p img
       details_url = element.attribute("href").value
       details_doc = Nokogiri::HTML(URI.open(details_url).read, nil, "utf-8")
       description = details_doc.search("#article-subheading_2-0").text.strip
