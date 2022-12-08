@@ -1,0 +1,64 @@
+<div class="frame">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 text-center">
+        <h5>Select your preferred month:</h3>
+
+        <div class="d-flex flex-wrap justify-content-center pt-4">
+          <div class="clickable">
+            <small>January</small>
+          </div>
+          <div class="clickable">
+            <small>February</small>
+          </div>
+          <div class="clickable">
+            <small>March</small>
+          </div>
+          <div class="clickable">
+            <small>April</small>
+          </div>
+          <div class="clickable">
+            <small>May</small>
+          </div>
+          <div class="clickable">
+            <small>June</small>
+          </div>
+          <div class="clickable">
+            <small>July</small>
+          </div>
+          <div class="clickable">
+            <small>August</small>
+          </div>
+          <div class="clickable">
+            <small>September</small>
+          </div>
+          <div class="clickable">
+            <small>October</small>
+          </div>
+          <div class="clickable">
+            <small>November</small>
+          </div>
+          <div class="clickable">
+            <small>December</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%# <script src="months_grid_controller.js"></script> %>
+<%#= javascript_include_tag "../javascript/controllers/months_grid_controller", "data-turbo-track": "reload", defer: true %>
+<script>
+const months = document.querySelectorAll('.clickable');
+
+  const toggleActiveClass = (event) => {
+    event.currentTarget.classList.toggle('active');
+  };
+
+  const toggleActiveOnClick = (month) => {
+    month.addEventListener('click', toggleActiveClass);
+  };
+
+  months.forEach(toggleActiveOnClick);
+
+</script>

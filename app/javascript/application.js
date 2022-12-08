@@ -3,7 +3,7 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
 // import { calendarControl } from "./controllers/calendar"
-// import "./controllers/calendar"
+// import "./controllers/months_grid_controller"
 
 //check the console for date click event
 //Fixed day highlight
