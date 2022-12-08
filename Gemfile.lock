@@ -251,13 +251,10 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-<<<<<<< HEAD
-    uri (0.12.0)
-=======
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
->>>>>>> master
+    uri (0.12.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.0)
