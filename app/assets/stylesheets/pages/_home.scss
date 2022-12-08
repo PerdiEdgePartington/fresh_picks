@@ -1,1 +1,43 @@
 // Specific CSS for your home-page
+h1 {
+  text-align: center
+}
+
+h2 {
+  text-align: center
+}
+
+p {
+  text-align: center
+}
+
+h5 {
+  text-align: center
+}
+
+.simple-frame{
+  border: solid #a7d390 1px;
+  width: 100%;
+  padding: 5px;
+}
+
+#head-banner {
+  height: 400px;
+  background-image: url(https://images.unsplash.com/photo-1596776572010-93e181f9fc07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  color: white;
+  margin-bottom: 2%;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+    gap: 15px;
+}
