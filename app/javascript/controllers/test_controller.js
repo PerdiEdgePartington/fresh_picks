@@ -1,9 +1,3 @@
-//= link_tree ../images
-//= link_directory ../stylesheets .css
-//= link_tree ../builds
-//check the console for date click event
-//Fixed day highlight
-//Added previous month and next month view
 
 function CalendarControl() {
   const calendar = new Date();
