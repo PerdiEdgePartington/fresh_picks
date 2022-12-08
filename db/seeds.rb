@@ -1,3 +1,5 @@
+require "open-uri"
+require "nokogiri"
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
@@ -6,8 +8,10 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 puts "Cleaning data base"
-
+ProduceRecipe.destroy_all
+Recipe.destroy_all
 Produce.destroy_all
+
 
 puts "Creating produce"
 
@@ -80,7 +84,7 @@ produce = Produce.new(
   nutrition_fiber: "3g fiber"
 )
 produce.save
-....................................
+
 produce = Produce.new(
   name: "Strawberries",
   description: "Strawberries are bright red, juicy, and sweet. They're an excellent source of vitamin C and manganese and also contain decent amounts of folate (vitamin B9) and potassium. Strawberries are very rich in antioxidants and plant compounds, which may have benefits for heart health and blood sugar control",
@@ -457,5 +461,36 @@ produce = Produce.new(
   nutrition_fiber: "2.5g fiber"
 )
 produce.save
+
+
+Produce.all.each do |produce|
+  recipes_array = []
+  html = URI.open("https://www.allrecipes.com/search?q=#{produce.name}").read
+
+  # 1. Parse HTML
+  doc = Nokogiri::HTML(html, nil, "utf-8")
+
+  # 2. Search the Nokogiri document by identifying the cards
+  produce_recipe = doc.search(".mntl-card-list-items.card")
+  produce_recipe[0..10].each do |element|
+
+    # 3 Go through actual recipes and not blog articles - recipes are the cards with a rating
+    unless element.search(".recipe-card-meta__rating-count-number").empty?
+      # 4. Create recipe and store it in results
+      name = element.search(".card__title-text").text.strip
+      img = element.search(".card__img")[1].attributes["src"].value
+
+      details_url = element.attribute("href").value
+      details_doc = Nokogiri::HTML(URI.open(details_url).read, nil, "utf-8")
+      description = details_doc.search("#article-subheading_2-0").text.strip
+
+      # 6. Create a recipe instance and append it to our results array.
+      recipes_array << Recipe.create!(name: name, description: description, url: details_url, img: img)
+    end
+  end
+  # 7. Select the first 5 recipes at the end when we're sure we have built recipes instances (no articles)
+
+  recipes_array.uniq.each { |rec| ProduceRecipe.create(produce: produce, recipe: rec) }
+end
 
 puts "Finished"

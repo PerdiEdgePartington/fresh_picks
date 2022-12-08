@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_07_155348) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_08_111426) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -51,16 +51,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_155348) do
     t.index ["users_id"], name: "index_favourites_on_users_id"
   end
 
-  create_table "meetings", force: :cascade do |t|
-    t.string "name"
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_meetings_on_user_id"
-  end
-
   create_table "produce_recipes", force: :cascade do |t|
     t.bigint "produce_id", null: false
     t.bigint "recipe_id", null: false
@@ -98,6 +88,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_155348) do
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "img"
   end
 
   create_table "seasons", force: :cascade do |t|
@@ -123,7 +114,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_155348) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "favourites", "recipes", column: "recipes_id"
   add_foreign_key "favourites", "users", column: "users_id"
-  add_foreign_key "meetings", "users"
   add_foreign_key "produce_recipes", "produces"
   add_foreign_key "produce_recipes", "recipes"
   add_foreign_key "produce_seasons", "produces"
