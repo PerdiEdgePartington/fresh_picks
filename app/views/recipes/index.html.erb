@@ -1,0 +1,19 @@
+<div>
+  <h1> Recipes</h1>
+</div>
+
+<div>
+  <div>
+    <% @produce_recipes.each do |produce_recipe| %>
+        <div>
+          <h2><%= produce_recipe.recipe.name %></h2>
+        </div>
+        <div>
+          <p><small><%= produce_recipe.recipe.description %></small></p>
+        </div>
+        <div>
+          <p><small><%= produce_recipe.recipe.url %></small></p>
+        </div>
+        <% end %>
+      </div>
+</div>
