@@ -8,10 +8,9 @@ class ProduceController < ApplicationController
     @produce = Produce.find(params[:id])
   end
 
-  private
+  # private
 
   # def find_produce
   #   @produce = Produce.find(params[:id])
   # end
-
 end

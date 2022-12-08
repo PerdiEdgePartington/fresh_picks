@@ -42,7 +42,9 @@
             <small>December</small>
           </div>
         </div>
-        <%= button_to "See produce!", {:class => "card-btn", :method => :get} %>
+          <div class="grid">
+            <%= button_to "view produce", produce_index_path, {:class => "card-btn", :method => :get} %>
+          </div>
       </div>
     </div>
   </div>
