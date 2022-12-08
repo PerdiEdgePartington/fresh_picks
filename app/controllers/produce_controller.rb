@@ -1,7 +1,11 @@
 class ProduceController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
+  def index
+    @produce = Produce.all
+  end
 
   def show
-
+    @produce = Produce.find(params[:id])
   end
 
   private
@@ -10,8 +14,4 @@ class ProduceController < ApplicationController
   #   @produce = Produce.find(params[:id])
   # end
 
-  skip_before_action :authenticate_user!, only: :index
-  def index
-    @produce = Produce.all
-  end
 end

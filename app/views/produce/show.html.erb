@@ -1,4 +1,25 @@
 <div class="banner">
+ <h1><%= @produce.name %></h1>
+</div>
+<div class="show-container">
+  <div class="row">
+    <div class="column description">
+      <p><%= @produce.description %></p>
 
-
+      <p>Think I sound good? Click here for recipes! <i class="fa-solid fa-arrow-right"></i> <%= button_to "How to eat me!", "recipe_path", {:class => "card-btn", :method => :get} %> </p>
+  </div>
+    <div class="column">
+      <div class="nutrition-card">
+        <h2>What is in me?</h2>
+        <ul>
+        <li><%= @produce.nutrition_calories%></li>
+        <li><%= @produce.nutrition_fat%></li>
+        <li><%= @produce.nutrition_protein%></li>
+        <li><%= @produce.nutrition_carbs%></li>
+        <li><%= @produce.nutrition_sugar%></li>
+        <li><%= @produce.nutrition_fiber%></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
