@@ -1,0 +1,17 @@
+<div class="min-height">
+  <div class="container-md pt-3">
+    <div class="image-box">
+    <% if @produce.photo.attached? %>
+    <%= cl_image_tag @produce.photo.key, height: 300, width: 400, crop: :fill %>
+    <% else %>
+      <img src="https://i.pinimg.com/originals/d2/40/41/d24041f9ff122f1c52f0c73f5a9fe703.jpg" alt="">
+    <% end %>
+    </div>
+</div>
+<hr class="solid">
+
+<div class="container-md pt-3 pb-3 my-3">
+  <div class="d-flex justify-content-between">
+    <div class="info"style="width: 65%">
+      <h2><%= @produce.name %></h2>
+      <p>occupancy: <%= @produce.description %></p>

@@ -1,8 +1,8 @@
 
 
 
-  <div class="cards">
-    <div class="wrapper">
+  <div class="main-container">
+    <div class="cards">
     <%  @produce.each do |produce| %>
         <div class="card">
              <img src="http://clv.h-cdn.co/assets/15/22/2048x2048/square-1432664914-strawberry-facts1.jpg">
@@ -11,7 +11,8 @@
                  <p>
                     <%= produce.description %>
                  </p>
-                    <button type="button" class="btn btn-success">More about me!</button>
+                  <%= button_to "More about me!", produce_path(produce), {:class => "card-btn", :method => :get} %>
+                    <%# <button type="button" class="btn btn-success" >More about me!</button> %>
             </div>
         </div>
     <% end %>

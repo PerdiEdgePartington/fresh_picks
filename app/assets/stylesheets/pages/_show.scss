@@ -1,0 +1,69 @@
+.banner{
+  background-image: url("https://i.pinimg.com/originals/d2/40/41/d24041f9ff122f1c52f0c73f5a9fe703.jpg");
+  height: 550px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 9px 12px 17px -3px rgba(247,245,245,0.59);
+  h1{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  }
+}
+
+
+.card-btn{
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.show-container{
+  margin-top: 50px;
+
+  h2{
+    font-family: $header-font;
+    text-align: center;
+    font-weight: 600;
+
+  }
+  p{
+    font-family: $p-font;
+    color: black;
+    font-size: 22px;
+  }
+}
+
+
+
+.row {
+  display: flex;
+  margin-left: 76px;
+}
+
+.column {
+  flex: 50%;
+}
+
+.nutrition-card{
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: white;
+  width: 400px;
+  height: 235px;
+  margin-left: 175px;
+
+  li{
+    font-family: $p-font;
+  }
+  h2{
+    font-family: $header-font;
+  }
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
