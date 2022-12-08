@@ -36,3 +36,15 @@
 .clickable.active i {
   color: #52ACF4;
 }
+
+.card-btn{
+  width: fit-content;
+  height: 40px;
+  cursor: pointer;
+  border-style: none;
+  background-color: #a7d390;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: all .5s ease-in-out;
+}
