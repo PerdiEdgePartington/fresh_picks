@@ -10,6 +10,7 @@ require "nokogiri"
 puts "Cleaning data base"
 ProduceRecipe.destroy_all
 Recipe.destroy_all
+ProduceSeason.destroy_all
 Produce.destroy_all
 
 
@@ -494,3 +495,27 @@ Produce.all.each do |produce|
 end
 
 puts "Finished"
+
+Season.destroy_all
+january = Season.create(name: "January")
+february = Season.create(name: "February")
+march = Season.create(name: "March")
+april = Season.create(name: "April")
+may = Season.create(name: "May")
+june = Season.create(name: "June")
+july = Season.create(name: "July")
+august = Season.create(name: "August")
+september = Season.create(name: "September")
+october = Season.create(name: "October")
+november = Season.create(name: "November")
+december = Season.create(name: "December")
+
+puts "#{Season.count} seasons created."
+
+Produce.all.each do |product|
+  months_array = []
+  rand(1..12).times do
+    months_array << Season.all.sample
+  end
+  months_array.uniq.each { |month| ProduceSeason.create(produce: product, season: month) }
+end
