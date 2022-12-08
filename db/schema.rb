@@ -84,6 +84,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_155348) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "nutrition_calories"
+    t.string "nutrition_fat"
+    t.string "nutrition_protein"
+    t.string "nutrition_carbs"
+    t.string "nutrition_sugar"
+    t.string "nutrition_fiber"
   end
 
   create_table "recipes", force: :cascade do |t|
