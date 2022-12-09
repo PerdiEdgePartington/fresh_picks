@@ -1,7 +1,9 @@
 #cards{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 26px 0;
+  justify-content: space-between;
+  width: 1150px;
 
 }
 .container{
@@ -23,16 +25,23 @@
 
 .card-btn{
   text-align: end;
-  padding: 10px;
+  display: flex;
 }
 
 .btn{
   background-color: #a7d390 !important;
-  border-style: none !important
+  border-style: none !important;
+  display: inline-block;
+  margin: 0 auto 1rem;
+  width: 170px;
 }
 
 .btn:hover{
   transition: all .5s cubic-bezier(.8,.5,.2,1.4);
   box-shadow: 0px 2px 3px rgba(0,0,0,.3);
   transform: scale(.97);
+}
+
+h1{
+  padding: 15px;
 }
