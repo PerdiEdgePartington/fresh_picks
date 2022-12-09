@@ -16,13 +16,21 @@
 }
 
 
-.card-btn{
+.recipe-btn{
   border-radius: 8px;
   padding: 5px;
+  background-color: white;
+  font-family: $p-font;
+  margin-left: 10px;
+}
+
+.recipe-btn:hover{
+  background-color: $green;
 }
 
 .show-container{
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
   h2{
     font-family: $header-font;
@@ -64,6 +72,11 @@
   h2{
     font-family: $header-font;
   }
+}
+
+.recipe-link{
+display: flex;
+flex-wrap: wrap;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
