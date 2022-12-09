@@ -1,12 +1,17 @@
 <div class="banner">
- <h1><%= @produce.name %></h1>
+
 </div>
+
+<h1 class= "show-h1"><%= @produce.name %></h1>
+
 <div class="show-container">
   <div class="row-custom">
     <div class="column description">
       <p><%= @produce.description %></p>
+      <div class="recipe-link">
+        <p>Think I sound good? Click here for recipes! <i class="fa-solid fa-arrow-right"></i> <%= button_to "How to eat me!", produce_recipes_path(@produce), {:class => "recipe-btn", :method => :get} %> </p>
+      </div>
 
-      <p>Think I sound good? Click here for recipes! <i class="fa-solid fa-arrow-right"></i> <%= button_to "How to eat me!", produce_recipes_path(@produce), {:class => "card-btn", :method => :get} %> </p>
   </div>
     <div class="column">
       <div class="nutrition-card">
