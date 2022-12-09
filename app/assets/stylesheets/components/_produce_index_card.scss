@@ -44,9 +44,9 @@ body{
     overflow: hidden;
     position: relative;
 }
-.card img{
+.index-card img{
     width: 100%;
-    height:100%;
+    height:80%;
     transition: all .5s cubic-bezier(.8,.5,.2,1.4);
 }
 .descriptions{
@@ -77,9 +77,10 @@ body{
     filter: blur(3px);
 }
 .index-card h1{
-    color: #ff3838;
+    color: rgb(79, 20, 79);
     letter-spacing: 1px;
     margin: 0px;
+    padding-bottom: 5px;
 }
 .index-card p{
     line-height: 24px;

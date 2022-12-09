@@ -7,9 +7,10 @@
     <div class="index-cards">
     <%  @produce.each do |produce| %>
         <div class="index-card">
-             <img src="http://clv.h-cdn.co/assets/15/22/2048x2048/square-1432664914-strawberry-facts1.jpg">
+          <h1> <%= produce.name %></h1>
+             <img src="https://i2-prod.mirror.co.uk/incoming/article3337763.ece/ALTERNATES/s1200c/Fruit-vegetables.jpg">
             <div class="descriptions">
-               <h1> <%= produce.name %></h1>
+              <h1> <%= produce.name %></h1>
                  <p>
                     <%= produce.description %>
                  </p>
