@@ -56,3 +56,10 @@
   transform: scale(.95) translateX(-5px);
   transition: all .5s ease-in-out;
 }
+
+.home-btn{
+  border-radius: 8px;
+  padding: 5px;
+  background-color: $green;
+  font-family: $p-font;
+}
