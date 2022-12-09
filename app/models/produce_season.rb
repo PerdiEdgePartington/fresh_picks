@@ -1,4 +1,4 @@
 class ProduceSeason < ApplicationRecord
   belongs_to :produce
-  belongs_to :seasons
+  belongs_to :season
 end

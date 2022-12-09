@@ -1,0 +1,58 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickable {
+  padding: 40px;
+  width: 220px;
+  border: 1px solid #dedede;
+  color: #a0a0a0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.clickable i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.clickable:hover i {
+  color: #52ACF4;
+}
+
+.clickable.active {
+  color: inherit;
+  border-color: inherit;
+}
+
+.clickable.active i {
+  color: #52ACF4;
+}
+
+.frame button{
+  width: fit-content;
+  height: 40px;
+  cursor: pointer;
+  border-style: none;
+  background-color: $green;
+  color:#fff;
+  font-size: 15px;
+  outline: none;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+  transition: all .5s ease-in-out;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 15px;
+}
+.frame button:hover{
+  transform: scale(.95) translateX(-5px);
+  transition: all .5s ease-in-out;
+}
