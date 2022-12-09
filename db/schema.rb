@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_08_111426) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_08_161435) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -72,11 +72,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_08_111426) do
 
   create_table "produce_seasons", force: :cascade do |t|
     t.bigint "produce_id", null: false
-    t.bigint "seasons_id", null: false
+    t.bigint "season_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["produce_id"], name: "index_produce_seasons_on_produce_id"
-    t.index ["seasons_id"], name: "index_produce_seasons_on_seasons_id"
+    t.index ["season_id"], name: "index_produce_seasons_on_season_id"
   end
 
   create_table "produces", force: :cascade do |t|
@@ -102,9 +102,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_08_111426) do
   end
 
   create_table "seasons", force: :cascade do |t|
-    t.string "months", array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|
@@ -128,5 +128,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_08_111426) do
   add_foreign_key "produce_recipes", "produces"
   add_foreign_key "produce_recipes", "recipes"
   add_foreign_key "produce_seasons", "produces"
-  add_foreign_key "produce_seasons", "seasons", column: "seasons_id"
+  add_foreign_key "produce_seasons", "seasons"
 end
