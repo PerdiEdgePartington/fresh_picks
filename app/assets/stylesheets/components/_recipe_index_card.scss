@@ -1,7 +1,9 @@
 #cards{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 26px 0;
+  justify-content: space-between;
+  width: 1150px;
 
 }
 .container{
@@ -23,12 +25,15 @@
 
 .card-btn{
   text-align: end;
-  padding: 10px;
+  display: flex;
 }
 
 .btn{
   background-color: #a7d390 !important;
-  border-style: none !important
+  border-style: none !important;
+  display: inline-block;
+  margin: 0 auto 1rem;
+  width: 170px;
 }
 
 .btn:hover{
@@ -37,6 +42,9 @@
   transform: scale(.97);
 }
 
+h1{
+  padding: 15px;
+}
 .recipe-h1{
   margin: 20px;
   font-size: 40px;
