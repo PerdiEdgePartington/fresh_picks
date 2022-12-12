@@ -21,17 +21,17 @@ body{
     margin-left: 30px;
 }
 
-.cards {
+.index-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 18px;
     width: 93vw;
     padding: 105px;
-    margin-left: 159px;
+    justify-content: space-between;
 }
 
-.card{
+.index-card{
     flex: 1;
     flex-basis: 300px;
     flex-grow: 0;
@@ -44,9 +44,9 @@ body{
     overflow: hidden;
     position: relative;
 }
-.card img{
+.index-card img{
     width: 100%;
-    height:100%;
+    height:80%;
     transition: all .5s cubic-bezier(.8,.5,.2,1.4);
 }
 .descriptions{
@@ -61,31 +61,32 @@ body{
     box-sizing: border-box;
     clip-path: circle(0% at 100% 100%);
 }
-.card:hover .descriptions{
+.index-card:hover .descriptions{
     left:0px;
     transition: all .7s ease-in-out;
     clip-path: circle(75%);
 }
-.card:hover{
+.index-card:hover{
     transition: all .5s cubic-bezier(.8,.5,.2,1.4);
     box-shadow: 0px 2px 3px rgba(0,0,0,.3);
     transform: scale(.97);
 }
-.card:hover img{
+.index-card:hover img{
     transition: all .5s cubic-bezier(.8,.5,.2,1.4);
     transform: scale(1.6) rotate(20deg);
     filter: blur(3px);
 }
-.card h1{
-    color: #ff3838;
+.index-card h1{
+    color: rgb(79, 20, 79);
     letter-spacing: 1px;
     margin: 0px;
+    padding-bottom: 5px;
 }
-.card p{
+.index-card p{
     line-height: 24px;
     height: 70%;
 }
-.card button{
+.index-card button{
     width: fit-content;
     height: 40px;
     cursor: pointer;
@@ -97,7 +98,22 @@ body{
     box-shadow: 0px 2px 3px rgba(0,0,0,.4);
     transition: all .5s ease-in-out;
 }
-.card button:hover{
+.index-card button:hover{
     transform: scale(.95) translateX(-5px);
     transition: all .5s ease-in-out;
 }
+
+.produce-h1{
+  margin: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  }
+
+  .card-btn{
+  border-radius: 8px;
+  padding: 5px;
+  background-color: $green;
+  font-family: $p-font;
+  }
