@@ -1,5 +1,5 @@
 body{
-    background-color: $beige;
+    background-color: white;
 }
 
 .main-container{
@@ -36,7 +36,7 @@ body{
     flex-basis: 300px;
     flex-grow: 0;
     height: 440px;
-    background: #fff;
+    background: $beige;
     border: 2px solid #fff;
     box-shadow: 0px 4px 7px rgba(0,0,0,.5);
     cursor: pointer;
