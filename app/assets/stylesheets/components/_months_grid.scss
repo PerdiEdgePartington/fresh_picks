@@ -32,7 +32,7 @@
 .winter {
   padding: 30px;
   width: 220px;
-  background-color: #ebe3c7;
+  background-color: rgba(235, 227, 199, 0.3);
   border: 1px solid black;
   color: black;
   margin-right: 10px;
@@ -46,7 +46,7 @@
 .spring {
   padding: 30px;
   width: 220px;
-  background-color: #a7d390;
+  background-color: rgba(167, 211, 144, 0.3);
   border: 1px solid black;
   color: black;
   margin-right: 10px;
@@ -60,7 +60,7 @@
 .summer {
   padding: 30px;
   width: 220px;
-  background-color: #fcae86;
+  background-color: rgba(252, 174, 134, 0.3);
   border: 1px solid black;
   color: black;
   margin-right: 10px;
@@ -74,7 +74,7 @@
 .autumn {
   padding: 30px;
   width: 220px;
-  background-color: #f78b8a;
+  background-color: rgba(247, 139, 138, 0.3);
   border: 1px solid black;
   color: black;
   margin-right: 10px;
@@ -101,6 +101,7 @@
 .clickable.active {
   color: inherit;
   border-color: inherit;
+  border: 3px solid black;
 }
 
 .clickable.active i {
