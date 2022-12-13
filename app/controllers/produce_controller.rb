@@ -3,13 +3,12 @@ class ProduceController < ApplicationController
   def index
     # @produce = Produce.search(params[:query])
     @produce = Produce.all
-    @search = params["search"]
+    @search = params["name"]
     if @search.present?
-      @name = @search["name"]
       sql_query = <<~SQL
       seasons.name @@ :query
     SQL
-    @produce = Produce.joins(:produce_seasons).joins(:seasons).where(sql_query, query: "%#{@name}%")
+    @produce = Produce.joins(:produce_seasons).joins(:seasons).where(sql_query, query: "%#{@search}%")
     end
   end
 
