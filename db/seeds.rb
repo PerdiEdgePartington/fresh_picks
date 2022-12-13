@@ -745,4 +745,413 @@ carrot_december.save
 cauliflower_december = ProduceSeason.new(produce: cauliflower, season: december)
 cauliflower_december.save
 
+celeriac_december = ProduceSeason.new(produce: celeriac, season: december)
+celeriac_december.save
+
+celery_december = ProduceSeason.new(produce: celery, season: december)
+celery_december.save
+
+artichoke_december = ProduceSeason.new(produce: artichoke, season: december)
+artichoke_december.save
+
+kale_december = ProduceSeason.new(produce: kale, season: december)
+kale_december.save
+
+kohlrabi_december = ProduceSeason.new(produce: kohlrabi, season: december)
+kohlrabi_december.save
+
+leek_december = ProduceSeason.new(produce: leek, season: december)
+leek_december.save
+
+onion_december = ProduceSeason.new(produce: onion, season: december)
+onion_december.save
+
+parsnip_december = ProduceSeason.new(produce: parsnip, season: december)
+parsnip_december.save
+
+pumpkin_december = ProduceSeason.new(produce: pumpkin, season: december)
+pumpkin_december.save
+
+shallot_december = ProduceSeason.new(produce: shallot, season: december)
+shallot_december.save
+
+swisschard_december = ProduceSeason.new(produce: swisschard, season: december)
+swisschard_december.save
+
+turnip_december = ProduceSeason.new(produce: turnip, season: december)
+turnip_december.save
+
+apple_december = ProduceSeason.new(produce: apple, season: december)
+apple_december.save
+
+cranberry_december = ProduceSeason.new(produce: cranberry, season: december)
+cranberry_december.save
+
+pear_december = ProduceSeason.new(produce: pear, season: december)
+pear_december.save
+
+puts "January"
+
+beetroot_january = ProduceSeason.new(produce: beetroot, season: january)
+beetroot_january.save
+
+sprout_january = ProduceSeason.new(produce: sprout, season: january)
+sprout_january.save
+
+carrot_january = ProduceSeason.new(produce: carrot, season: january)
+carrot_january.save
+
+cauliflower_january = ProduceSeason.new(produce: cauliflower, season: january)
+cauliflower_january.save
+
+celeriac_january = ProduceSeason.new(produce: celeriac, season: january)
+celeriac_january.save
+
+celery_january = ProduceSeason.new(produce: celery, season: january)
+celery_january.save
+
+artichoke_january = ProduceSeason.new(produce: artichoke, season: january)
+artichoke_january.save
+
+kale_january = ProduceSeason.new(produce: kale, season: january)
+kale_january.save
+
+kohlrabi_january = ProduceSeason.new(produce: kohlrabi, season: january)
+kohlrabi_january.save
+
+leek_january = ProduceSeason.new(produce: leek, season: january)
+leek_january.save
+
+onion_january = ProduceSeason.new(produce: onion, season: january)
+onion_january.save
+
+parsnip_january = ProduceSeason.new(produce: parsnip, season: january)
+parsnip_january.save
+
+shallot_january = ProduceSeason.new(produce: shallot, season: january)
+shallot_january.save
+
+turnip_january = ProduceSeason.new(produce: turnip, season: january)
+turnip_january.save
+
+apple_january = ProduceSeason.new(produce: apple, season: january)
+apple_january.save
+
+pear_january = ProduceSeason.new(produce: pear, season: january)
+pear_january.save
+
+rhubarb_january = ProduceSeason.new(produce: rhubarb, season: january)
+rhubarb_january.save
+
+puts "February"
+
+beetroot_february = ProduceSeason.new(produce: beetroot, season: february)
+beetroot_february.save
+
+sprout_february = ProduceSeason.new(produce: sprout, season: february)
+sprout_february.save
+
+carrot_february = ProduceSeason.new(produce: carrot, season: february)
+carrot_february.save
+
+cauliflower_february = ProduceSeason.new(produce: cauliflower, season: february)
+cauliflower_february.save
+
+celeriac_february = ProduceSeason.new(produce: celeriac, season: february)
+celeriac_february.save
+
+artichoke_february = ProduceSeason.new(produce: artichoke, season: february)
+artichoke_february.save
+
+kale_february = ProduceSeason.new(produce: kale, season: february)
+kale_february.save
+
+kohlrabi_february = ProduceSeason.new(produce: kohlrabi, season: february)
+kohlrabi_february.save
+
+leek_february = ProduceSeason.new(produce: leek, season: february)
+leek_february.save
+
+onion_february = ProduceSeason.new(produce: onion, season: february)
+onion_february.save
+
+parsnip_february = ProduceSeason.new(produce: parsnip, season: february)
+parsnip_february.save
+
+shallot_february = ProduceSeason.new(produce: shallot, season: february)
+shallot_february.save
+
+turnip_february = ProduceSeason.new(produce: turnip, season: february)
+turnip_february.save
+
+apple_february = ProduceSeason.new(produce: apple, season: february)
+apple_february.save
+
+pear_february = ProduceSeason.new(produce: pear, season: february)
+pear_february.save
+
+rhubarb_february = ProduceSeason.new(produce: rhubarb, season: february)
+rhubarb_february.save
+
+puts "March"
+
+beetroot_march = ProduceSeason.new(produce: beetroot, season: march)
+beetroot_march.save
+
+carrot_march = ProduceSeason.new(produce: carrot, season: march)
+carrot_march.save
+
+cauliflower_march = ProduceSeason.new(produce: cauliflower, season: march)
+cauliflower_march.save
+
+cucumber_march = ProduceSeason.new(produce: cucumber, season: march)
+cucumber_march.save
+
+kale_march = ProduceSeason.new(produce: kale, season: march)
+kale_march.save
+
+leek_march = ProduceSeason.new(produce: leek, season: march)
+leek_march.save
+
+parsnip_march = ProduceSeason.new(produce: parsnip, season: march)
+parsnip_march.save
+
+rhubarb_march = ProduceSeason.new(produce: rhubarb, season: march)
+rhubarb_march.save
+
+spinach_march = ProduceSeason.new(produce: spinach, season: march)
+spinach_march.save
+
+puts "April"
+
+beetroot_april = ProduceSeason.new(produce: beetroot, season: april)
+beetroot_april.save
+
+broccoli_april = ProduceSeason.new(produce: carrot, season: april)
+broccoli_april.save
+
+carrot_april = ProduceSeason.new(produce: carrot, season: april)
+carrot_april.save
+
+kale_april = ProduceSeason.new(produce: kale, season: april)
+kale_april.save
+
+lettuce_april = ProduceSeason.new(produce: lettuce, season: april)
+lettuce_april.save
+
+parsnip_april = ProduceSeason.new(produce: parsnip, season: april)
+parsnip_april.save
+
+rhubarb_april = ProduceSeason.new(produce: rhubarb, season: april)
+rhubarb_april.save
+
+spinach_april = ProduceSeason.new(produce: spinach, season: april)
+spinach_april.save
+
+radish_april = ProduceSeason.new(produce: radish, season: april)
+radish_april.save
+
+puts "May"
+
+aubergine_may = ProduceSeason.new(produce: aubergine, season: may)
+aubergine_may.save
+
+beetroot_may = ProduceSeason.new(produce: beetroot, season: may)
+beetroot_may.save
+
+broccoli_may = ProduceSeason.new(produce: brocolli, season: may)
+broccoli_may.save
+
+carrot_may = ProduceSeason.new(produce: carrot, season: may)
+carrot_may.save
+
+lettuce_may = ProduceSeason.new(produce: lettuce, season: may)
+lettuce_may.save
+
+pea_may = ProduceSeason.new(produce: pea, season: may)
+pea_may.save
+
+bellpepper_may = ProduceSeason.new(produce: bellpepper, season: may)
+bellpepper_may.save
+
+radish_may = ProduceSeason.new(produce: radish, season: may)
+radish_may.save
+
+rhubarb_may = ProduceSeason.new(produce: rhubarb, season: may)
+rhubarb_may.save
+
+spinach_may = ProduceSeason.new(produce: spinach, season: may)
+spinach_may.save
+
+strawberry_may = ProduceSeason.new(produce: strawberry, season: may)
+strawberry_may.save
+
+puts "June"
+
+aubergine_june = ProduceSeason.new(produce: aubergine, season: june)
+aubergine_june.save
+
+beetroot_june = ProduceSeason.new(produce: beetroot, season: june)
+beetroot_june.save
+
+broccoli_june = ProduceSeason.new(produce: brocolli, season: june)
+broccoli_june.save
+
+carrot_june = ProduceSeason.new(produce: carrot, season: june)
+carrot_june.save
+
+cauliflower_june = ProduceSeason.new(produce: cauliflower, season: june)
+cauliflower_june.save
+
+cucumber_june = ProduceSeason.new(produce: cucumber, season: june)
+cucumber_june.save
+
+kohlrabi_june = ProduceSeason.new(produce: kohlrabi, season: june)
+kohlrabi_june.save
+
+lettuce_june = ProduceSeason.new(produce: lettuce, season: june)
+lettuce_june.save
+
+onion_june = ProduceSeason.new(produce: onion, season: june)
+onion_june.save
+
+pakchoy_june = ProduceSeason.new(produce: packchoy, season: june)
+pakchoy_june.save
+
+pea_june = ProduceSeason.new(produce: pea, season: june)
+pea_june.save
+
+bellpepper_june = ProduceSeason.new(produce: bellpepper, season: june)
+bellpepper_june.save
+
+radish_june = ProduceSeason.new(produce: radish, season: june)
+radish_june.save
+
+rhubarb_june = ProduceSeason.new(produce: rhubarb, season: june)
+rhubarb_june.save
+
+spinach_june = ProduceSeason.new(produce: spinach, season: june)
+spinach_june.save
+
+swisschard_june = ProduceSeason.new(produce: swisschard, season: june)
+swisschard_june.save
+
+turnip_june = ProduceSeason.new(produce: turnip, season: june)
+turnip_june.save
+
+blackcurrant_june = ProduceSeason.new(produce: blackcurrant, season: june)
+blackcurrant_june.save
+
+blueberry_june = ProduceSeason.new(produce: blueberry, season: june)
+blueberry_june.save
+
+cherry_june = ProduceSeason.new(produce: cherry, season: june)
+cherry_june.save
+
+gooseberry_june = ProduceSeason.new(produce: gooseberry, season: june)
+gooseberry_june.save
+
+raspberry_june = ProduceSeason.new(produce: raspberry, season: june)
+raspberry_june.save
+
+redcurrant_june = ProduceSeason.new(produce: redcurrant, season: june)
+redcurrant_june.save
+
+strawberry_june = ProduceSeason.new(produce: strawberry, season: june)
+strawberry_june.save
+
+chilli_june = ProduceSeason.new(produce: chilli, season: june)
+chilli_june.save
+
+puts "July"
+
+aubergine_july = ProduceSeason.new(produce: aubergine, season: july)
+aubergine_july.save
+
+beetroot_july = ProduceSeason.new(produce: beetroot, season: july)
+beetroot_july.save
+
+broccoli_july = ProduceSeason.new(produce: brocolli, season: july)
+broccoli_july.save
+
+carrot_july = ProduceSeason.new(produce: carrot, season: july)
+carrot_july.save
+
+cauliflower_july = ProduceSeason.new(produce: cauliflower, season: july)
+cauliflower_july.save
+
+cucumber_july = ProduceSeason.new(produce: cucumber, season: july)
+cucumber_july.save
+
+fennel_july = ProduceSeason.new(produce: fennel, season: july)
+fennel_july.save
+
+kohlrabi_july = ProduceSeason.new(produce: kohlrabi, season: july)
+kohlrabi_july.save
+
+lettuce_july = ProduceSeason.new(produce: lettuce, season: july)
+lettuce_july.save
+
+onion_july = ProduceSeason.new(produce: onion, season: july)
+onion_july.save
+
+pakchoy_july = ProduceSeason.new(produce: packchoy, season: july)
+pakchoy_july.save
+
+pea_july = ProduceSeason.new(produce: pea, season: july)
+pea_july.save
+
+radish_july = ProduceSeason.new(produce: radish, season: july)
+radish_july.save
+
+rhubarb_july = ProduceSeason.new(produce: rhubarb, season: july)
+rhubarb_july.save
+
+spinach_july = ProduceSeason.new(produce: spinach, season: july)
+spinach_july.save
+
+swisschard_july = ProduceSeason.new(produce: swisschard, season: july)
+swisschard_july.save
+
+turnip_july = ProduceSeason.new(produce: turnip, season: july)
+turnip_july.save
+
+shallots_july = ProduceSeason.new(produce: shallots, season: july)
+shallots_july.save
+
+sweetcorn_july = ProduceSeason.new(produce: sweetcorn, season: july)
+sweetcorn_july.save
+
+tomato_july = ProduceSeason.new(produce: tomato, season: july)
+tomato_july.save
+
+blackcurrant_july = ProduceSeason.new(produce: blackcurrant, season: july)
+blackcurrant_july.save
+
+blackberry_july = ProduceSeason.new(produce: blackberry, season: july)
+blackberry_july.save
+
+blueberry_july = ProduceSeason.new(produce: blueberry, season: july)
+blueberry_july.save
+
+cherry_july = ProduceSeason.new(produce: cherry, season: july)
+cherry_july.save
+
+gooseberry_july = ProduceSeason.new(produce: gooseberry, season: july)
+gooseberry_july.save
+
+raspberry_july = ProduceSeason.new(produce: raspberry, season: july)
+raspberry_july.save
+
+redcurrant_july = ProduceSeason.new(produce: redcurrant, season: july)
+redcurrant_july.save
+
+strawberry_july = ProduceSeason.new(produce: strawberry, season: july)
+strawberry_july.save
+
+chilli_july = ProduceSeason.new(produce: chilli, season: july)
+chilli_july.save
+
+
+
 puts "Finished"
