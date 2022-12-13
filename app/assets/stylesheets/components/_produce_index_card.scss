@@ -43,6 +43,7 @@ body{
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 
 
@@ -179,4 +180,15 @@ body{
   padding: 5px;
   background-color: $green;
   font-family: $p-font;
+  }
+
+  .form-search{
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+  }
+
+  .form-btn{
+    margin: 0 auto 0rem 10px !important;
+    width: 80px !important;
   }

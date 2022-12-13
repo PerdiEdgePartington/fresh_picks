@@ -2,9 +2,21 @@
 
 <div class="produce-wrapper">
   <div class="produce-header">
-    <h1>Produce available in *selected month*.</h1>
+    <h1>Produce available in <%= @search %>.</h1>
     <div class="sub-head"> Now lets turnip the beet</div>
   </div>
+
+  <%= form_with url: produce_index_path, method: :get, class: "d-flex form-search" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a produce"
+  %>
+  <%= hidden_field_tag :name, params["name"] %>
+  <%= submit_tag "Search", class: "btn btn-primary form-btn" %>
+<% end %>
+
+
     <div class="slides">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">

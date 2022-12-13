@@ -85,3 +85,5 @@ gem "cloudinary"
 
 #Dynamic Like & Dislike Button
 gem 'acts_as_favoritor'
+gem "pg_search"
+gem "simple_form", github: "heartcombo/simple_form"
