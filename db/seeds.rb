@@ -730,10 +730,19 @@ december = Season.create(name: "December")
 
 puts "#{Season.count} seasons created."
 
-Produce.all.each do |product|
-  months_array = []
-  rand(1..12).times do
-    months_array << Season.all.sample
-  end
-  months_array.uniq.each { |month| ProduceSeason.create(produce: product, season: month) }
-end
+puts "Allocating seasons to produce"
+puts "December"
+
+beetroot_december = ProduceSeason.new(produce: beetroot, season: december)
+beetroot_december.save
+
+sprout_december = ProduceSeason.new(produce: sprout, season: december)
+sprout_december.save
+
+carrot_december = ProduceSeason.new(produce: carrot, season: december)
+carrot_december.save
+
+cauliflower_december = ProduceSeason.new(produce: cauliflower, season: december)
+cauliflower_december.save
+
+puts "Finished"
