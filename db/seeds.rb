@@ -927,7 +927,7 @@ puts "April"
 beetroot_april = ProduceSeason.new(produce: beetroot, season: april)
 beetroot_april.save
 
-broccoli_april = ProduceSeason.new(produce: carrot, season: april)
+broccoli_april = ProduceSeason.new(produce: broccoli, season: april)
 broccoli_april.save
 
 carrot_april = ProduceSeason.new(produce: carrot, season: april)
@@ -959,7 +959,7 @@ aubergine_may.save
 beetroot_may = ProduceSeason.new(produce: beetroot, season: may)
 beetroot_may.save
 
-broccoli_may = ProduceSeason.new(produce: brocolli, season: may)
+broccoli_may = ProduceSeason.new(produce: broccoli, season: may)
 broccoli_may.save
 
 carrot_may = ProduceSeason.new(produce: carrot, season: may)
@@ -994,7 +994,7 @@ aubergine_june.save
 beetroot_june = ProduceSeason.new(produce: beetroot, season: june)
 beetroot_june.save
 
-broccoli_june = ProduceSeason.new(produce: brocolli, season: june)
+broccoli_june = ProduceSeason.new(produce: broccoli, season: june)
 broccoli_june.save
 
 carrot_june = ProduceSeason.new(produce: carrot, season: june)
@@ -1015,7 +1015,7 @@ lettuce_june.save
 onion_june = ProduceSeason.new(produce: onion, season: june)
 onion_june.save
 
-pakchoy_june = ProduceSeason.new(produce: packchoy, season: june)
+pakchoy_june = ProduceSeason.new(produce: pakchoy, season: june)
 pakchoy_june.save
 
 pea_june = ProduceSeason.new(produce: pea, season: june)
@@ -1038,9 +1038,6 @@ swisschard_june.save
 
 turnip_june = ProduceSeason.new(produce: turnip, season: june)
 turnip_june.save
-
-blackcurrant_june = ProduceSeason.new(produce: blackcurrant, season: june)
-blackcurrant_june.save
 
 blueberry_june = ProduceSeason.new(produce: blueberry, season: june)
 blueberry_june.save
@@ -1071,7 +1068,7 @@ aubergine_july.save
 beetroot_july = ProduceSeason.new(produce: beetroot, season: july)
 beetroot_july.save
 
-broccoli_july = ProduceSeason.new(produce: brocolli, season: july)
+broccoli_july = ProduceSeason.new(produce: broccoli, season: july)
 broccoli_july.save
 
 carrot_july = ProduceSeason.new(produce: carrot, season: july)
@@ -1095,7 +1092,7 @@ lettuce_july.save
 onion_july = ProduceSeason.new(produce: onion, season: july)
 onion_july.save
 
-pakchoy_july = ProduceSeason.new(produce: packchoy, season: july)
+pakchoy_july = ProduceSeason.new(produce: pakchoy, season: july)
 pakchoy_july.save
 
 pea_july = ProduceSeason.new(produce: pea, season: july)
@@ -1116,17 +1113,14 @@ swisschard_july.save
 turnip_july = ProduceSeason.new(produce: turnip, season: july)
 turnip_july.save
 
-shallots_july = ProduceSeason.new(produce: shallots, season: july)
-shallots_july.save
+shallot_july = ProduceSeason.new(produce: shallot, season: july)
+shallot_july.save
 
 sweetcorn_july = ProduceSeason.new(produce: sweetcorn, season: july)
 sweetcorn_july.save
 
 tomato_july = ProduceSeason.new(produce: tomato, season: july)
 tomato_july.save
-
-blackcurrant_july = ProduceSeason.new(produce: blackcurrant, season: july)
-blackcurrant_july.save
 
 blackberry_july = ProduceSeason.new(produce: blackberry, season: july)
 blackberry_july.save
@@ -1160,7 +1154,7 @@ aubergine_august.save
 beetroot_august = ProduceSeason.new(produce: beetroot, season: august)
 beetroot_august.save
 
-broccoli_august = ProduceSeason.new(produce: brocolli, season: august)
+broccoli_august = ProduceSeason.new(produce: broccoli, season: august)
 broccoli_august.save
 
 carrot_august = ProduceSeason.new(produce: carrot, season: august)
@@ -1187,7 +1181,7 @@ leek_august.save
 onion_august = ProduceSeason.new(produce: onion, season: august)
 onion_august.save
 
-pakchoy_august = ProduceSeason.new(produce: packchoy, season: august)
+pakchoy_august = ProduceSeason.new(produce: pakchoy, season: august)
 pakchoy_august.save
 
 parsnip_august = ProduceSeason.new(produce: parsnip, season: august)
@@ -1208,8 +1202,8 @@ radish_august.save
 rhubarb_august = ProduceSeason.new(produce: rhubarb, season: august)
 rhubarb_august.save
 
-shallots_august = ProduceSeason.new(produce: shallots, season: august)
-shallots_august.save
+shallot_august = ProduceSeason.new(produce: shallot, season: august)
+shallot_august.save
 
 sweetcorn_august = ProduceSeason.new(produce: sweetcorn, season: august)
 sweetcorn_august.save
@@ -1222,9 +1216,6 @@ swisschard_august.save
 
 turnip_august = ProduceSeason.new(produce: turnip, season: august)
 turnip_august.save
-
-blackcurrant_august = ProduceSeason.new(produce: blackcurrant, season: august)
-blackcurrant_august.save
 
 blackberry_august = ProduceSeason.new(produce: blackberry, season: august)
 blackberry_august.save
@@ -1261,11 +1252,11 @@ aubergine_september.save
 beetroot_september = ProduceSeason.new(produce: beetroot, season: september)
 beetroot_september.save
 
-broccoli_september = ProduceSeason.new(produce: brocolli, season: september)
+broccoli_september = ProduceSeason.new(produce: broccoli, season: september)
 broccoli_september.save
 
-sprouts_september = ProduceSeason.new(produce: brocolli, season: september)
-sprouts_september.save
+sprout_september = ProduceSeason.new(produce: sprout, season: september)
+sprout_september.save
 
 butternutsquash_september = ProduceSeason.new(produce: butternutsquash, season: september)
 butternutsquash_september.save
@@ -1303,7 +1294,7 @@ kale_september.save
 onion_september = ProduceSeason.new(produce: onion, season: september)
 onion_september.save
 
-pakchoy_september = ProduceSeason.new(produce: packchoy, season: september)
+pakchoy_september = ProduceSeason.new(produce: pakchoy, season: september)
 pakchoy_september.save
 
 parsnip_september = ProduceSeason.new(produce: parsnip, season: september)
@@ -1324,8 +1315,8 @@ rhubarb_september.save
 pumpkin_september = ProduceSeason.new(produce: pumpkin, season: september)
 pumpkin_september.save
 
-shallots_september = ProduceSeason.new(produce: shallots, season: september)
-shallots_september.save
+shallot_september = ProduceSeason.new(produce: shallot, season: september)
+shallot_september.save
 
 sweetcorn_september = ProduceSeason.new(produce: sweetcorn, season: september)
 sweetcorn_september.save
@@ -1377,11 +1368,11 @@ aubergine_october.save
 beetroot_october = ProduceSeason.new(produce: beetroot, season: october)
 beetroot_october.save
 
-broccoli_october = ProduceSeason.new(produce: brocolli, season: october)
+broccoli_october = ProduceSeason.new(produce: broccoli, season: october)
 broccoli_october.save
 
-sprouts_october = ProduceSeason.new(produce: brocolli, season: october)
-sprouts_october.save
+sprout_october = ProduceSeason.new(produce: sprout, season: october)
+sprout_october.save
 
 butternutsquash_october = ProduceSeason.new(produce: butternutsquash, season: october)
 butternutsquash_october.save
@@ -1434,8 +1425,8 @@ pumpkin_october.save
 radish_october = ProduceSeason.new(produce: radish, season: october)
 radish_october.save
 
-shallots_october = ProduceSeason.new(produce: shallots, season: october)
-shallots_october.save
+shallot_october = ProduceSeason.new(produce: shallot, season: october)
+shallot_october.save
 
 sweetcorn_october = ProduceSeason.new(produce: sweetcorn, season: october)
 sweetcorn_october.save
@@ -1466,8 +1457,8 @@ puts "November"
 beetroot_november = ProduceSeason.new(produce: beetroot, season: november)
 beetroot_november.save
 
-sprouts_november = ProduceSeason.new(produce: brocolli, season: november)
-sprouts_november.save
+sprout_november = ProduceSeason.new(produce: sprout, season: november)
+sprout_november.save
 
 butternutsquash_november = ProduceSeason.new(produce: butternutsquash, season: november)
 butternutsquash_november.save
