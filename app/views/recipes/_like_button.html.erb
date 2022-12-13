@@ -1,0 +1,3 @@
+<div class="like-icon mx-2 <%= 'red' if current_user.favorited?(produce_recipe.recipe) %>" data-id="<%= produce_recipe.recipe.id %>">
+  <i class="fas fa-heart"></i>
+</div>
