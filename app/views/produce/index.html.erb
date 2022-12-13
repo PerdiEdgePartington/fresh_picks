@@ -1,25 +1,42 @@
-<div>
-  <h1 class="produce-h1">Your choice of seasonal produce</h1>
-</div>
 
 
-  <div class="main-container">
-    <div class="index-cards">
-    <%  @produce.each do |produce| %>
-        <div class="index-card">
-          <h1> <%= produce.name %></h1>
-          <% if produce.photo.attached? %>
-          <%= cl_image_tag produce.photo.key %>
+<div class="produce-wrapper">
+  <div class="produce-header">
+    <h1>Produce available in *selected month*.</h1>
+    <div class="sub-head"> Now lets turnip the beet</div>
+  </div>
+    <div class="slides">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <% @produce.each_slice(3).with_index do |slice, index| %>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<%= index %>" class="<%= index == 0 ? 'active' : '' %>" aria-current="<%= index == 0 ? 'true' : '' %>" aria-label="Slide <%= index %>"></button>
           <% end %>
-            <div class="descriptions">
-              <h1> <%= produce.name %></h1>
-                 <p>
-                    <%= produce.description %>
-                 </p>
-                  <%= button_to "More about me!", produce_path(produce), {:class => "card-btn", :method => :get} %>
-                    <%# <button type="button" class="btn btn-success" >More about me!</button> %>
-            </div>
         </div>
-    <% end %>
+
+
+        <div class="carousel-inner">
+          <% @produce.each_slice(3).with_index do |slice, index| %>
+            <div class="carousel-item <%= 'active' if index == 0 %>">
+              <div class="row">
+                <% slice.each do |produce| %>
+                  <div class="col">
+                    <%= render"produce_card", produce:produce %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   </div>
+</div>
