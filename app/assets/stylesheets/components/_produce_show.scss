@@ -4,6 +4,7 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   grid-gap: 0px;
+
 }
 
 .grid-child-1 {
@@ -17,4 +18,16 @@
   padding: 20px;
   background-color: white;
   text-align: left;
+
 }
+
+.grid-child-2 .show-h1{
+  font-family: $header-font;
+  font-size: 50px;
+  color: #026721;
+  text-align: center;
+  }
+
+  .grid-child-2 p{
+    text-align: center;
+  }
