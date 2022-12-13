@@ -1,0 +1,18 @@
+<div class="container">
+  <div id="cards">
+    <% @recipes.each do |recipe| %>
+    <div class="card" style="width: 22rem;">
+    <div>
+      <img class="card-img-top" src="<%= recipe.img %>" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= recipe.name %></h5>
+        <p class="card-text"><%= recipe.description %></p>
+      </div>
+    </div>
+    <div class= "recipe-btn" style= "background-color: transparent; text-align: center">
+      <a target="_blank" href="<%= recipe.url %>" class="btn btn-primary">Cook me!</a>
+    </div>
+    </div>
+    <% end %>
+  </div>
+</div>

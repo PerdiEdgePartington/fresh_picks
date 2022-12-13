@@ -6,6 +6,23 @@
   position:absolute;
   display: flex;
   justify-content: flex-end;
-  width: 100%
+  width: 100%;
+  text-decoration: none;
+  top: 5px;
+  font-size: 20px;
 
+}
+
+.like-icon{
+  background-color: white;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-regular{
+  color: black;
 }

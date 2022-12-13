@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       post 'toggle_favorite', to: "recipes#toggle_favorite"
     end
   end
+
+  get "dashboard", to: "dashboards#show"
 end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
