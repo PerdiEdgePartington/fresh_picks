@@ -1,9 +1,17 @@
- <div class="index-card">
-    <h2> <%= produce.name %></h2>
-    <img src="https://i2-prod.mirror.co.uk/incoming/article3337763.ece/ALTERNATES/s1200c/Fruit-vegetables.jpg">
-    <div class="descriptions">
-       <h2> <%= produce.name %></h2>
-        <p><%= produce.description %></p>
-        <%= button_to "More about me!", produce_path(produce), {:class => "card-btn", :method => :get} %>
-    </div>
-</div>
+<div class="main-container">
+    <div class="index-cards">
+    <%  @produce.each do |produce| %>
+        <div class="index-card">
+          <h1> <%= produce.name %></h1>
+          <% if produce.photo.attached? %>
+          <%= cl_image_tag produce.photo.key %>
+          <% end %>
+            <div class="descriptions">
+              <h1> <%= produce.name %></h1>
+                 <p>
+                    <%= produce.description %>
+                 </p>
+                  <%= button_to "More about me!", produce_path(produce), {:class => "card-btn", :method => :get} %>
+                    <%# <button type="button" class="btn btn-success" >More about me!</button> %>
+            </div>
+        </div>
