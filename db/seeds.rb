@@ -426,6 +426,8 @@ produce = Produce.new(
   nutrition_sugar: "1.7g of sugar (naturally occurring)",
   nutrition_fiber: "2.6g fiber"
 )
+produce_photo_first = URI.open("https://i2-prod.mirror.co.uk/incoming/article3337763.ece/ALTERNATES/s1200c/Fruit-vegetables.jpg")
+produce.photo.attach(io:produce_photo_first, filename:"Broccoli1.png", content_type:"image/png")
 produce.save
 
 produce = Produce.new(
