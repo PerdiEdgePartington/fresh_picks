@@ -5,42 +5,66 @@
         <h6>Select your preferred month</h6>
 
         <div class="d-flex flex-wrap justify-content-center pt-4">
+         <%= link_to "produce?name=january" do %>
           <div class="clickable winter ">
             <small>January</small>
           </div>
+          <% end %>
+           <%= link_to "produce?name=february" do %>
           <div class="clickable winter">
             <small>February</small>
           </div>
+          <% end %>
+           <%= link_to "produce?name=march" do %>
           <div class="clickable winter">
             <small>March</small>
           </div>
+          <% end %>
+           <%= link_to "produce?name=april" do %>
           <div class="clickable spring">
             <small>April</small>
           </div>
+          <% end %>
+           <%= link_to "produce?name=may" do %>
           <div class="clickable spring">
             <small>May</small>
           </div>
+          <% end %>
+           <%= link_to "produce?name=june" do %>
           <div class="clickable spring">
             <small>June</small>
           </div>
+          <% end %>
+          <%= link_to "produce?name=july" do %>
           <div class="clickable summer">
             <small>July</small>
           </div>
+          <% end %>
+          <%= link_to "produce?name=august" do %>
           <div class="clickable summer">
             <small>August</small>
           </div>
+          <% end %>
+          <%= link_to "produce?name=september" do %>
           <div class="clickable summer">
             <small>September</small>
           </div>
+          <% end %>
+          <%= link_to "produce?name=october" do %>
           <div class="clickable autumn">
             <small>October</small>
           </div>
+          <% end %>
+          <%= link_to "produce?name=november" do %>
           <div class="clickable autumn">
             <small>November</small>
           </div>
+          <% end %>
+          <%= link_to "produce?name=december" do %>
           <div class="clickable autumn">
             <small>December</small>
           </div>
+          <% end %>
         </div>
           <div class="grid">
             <%= button_to "view produce", produce_index_path, {:class => "home-btn", :method => :get} %>
