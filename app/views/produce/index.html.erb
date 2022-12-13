@@ -6,13 +6,13 @@
     <div class="sub-head"> Now lets turnip the beet</div>
   </div>
 
-  <%= form_with url: produce_index_path, method: :get, class: "d-flex" do %>
+  <%= form_with url: produce_index_path, method: :get, class: "d-flex form-search" do %>
   <%= text_field_tag :query,
     params[:query],
     class: "form-control",
     placeholder: "Find a produce"
   %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
+  <%= submit_tag "Search", class: "btn btn-primary form-btn" %>
 <% end %>
 
 
