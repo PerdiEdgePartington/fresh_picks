@@ -8,10 +8,10 @@
 // }
 
 footer {
-  background: #a7d390;
+  background: $grey;
   height: auto;
   width: 100vw;
-  font-family: "Open Sans";
+  font-family: "Source Sans Pro";
   padding-top: 40px;
   color: #0c330d;
   margin-top: 70px;
@@ -64,7 +64,7 @@ footer {
 }
 
 .footer-copyright{
-  background-color: #a7d390;
+  background-color: $primary;
   width: 100vw;
   text-align: center;
   padding: 20px 0;
