@@ -24,14 +24,15 @@
 }
 
 #head-banner {
-  height: 400px;
-  background-image: url(https://images.unsplash.com/photo-1596776572010-93e181f9fc07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  height: 500px;
+  background-image: url(https://thumbnails.production.thenounproject.com/t6nGtsRv1JtpV4tf797LsHvh7GE=/fit-in/1000x1000/photos.production.thenounproject.com/photos/CD93C09F-0492-4298-9C04-0DCC6CC406B1.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   color: white;
-  filter: brightness(87%);
+  filter: drop-shadow(2px 4px 6px black);
   margin-bottom: 50px;
   position: relative;
 }
@@ -46,6 +47,8 @@
     height: 75%;
     width: 100%;
     gap: 15px;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    font-family: $header-font;
+    margin-top: 187px;
+    font-family: auto;
+    color: #3c3f3d;
+
 }

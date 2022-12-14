@@ -1,3 +1,9 @@
-<div class="like-icon mx-2 <%= 'red' if current_user.favorited?(produce_recipe.recipe) %>" data-id="<%= produce_recipe.recipe.id %>">
-  <i class="<%= current_user.favorited?(produce_recipe.recipe) ? 'fas' : 'fa-regular' %> fa-heart"></i>
-</div>
+<% if current_user %>
+  <div class="like-icon mx-2 <%= 'red' if current_user.favorited?(produce_recipe.recipe) %>" data-id="<%= produce_recipe.recipe.id %>">
+    <i class="<%= current_user.favorited?(produce_recipe.recipe) ? 'fas' : 'fa-regular' %> fa-heart"></i>
+  </div>
+  <% else %>
+    <div class="like-icon mx-2" data-id="<%= produce_recipe.recipe.id %>">
+        <i class="fa-regular fa-heart"></i>
+     </div>
+<% end %>
