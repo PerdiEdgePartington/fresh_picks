@@ -12,6 +12,7 @@
     <div>
       <%= link_to toggle_favorite_recipe_path(produce_recipe.recipe, params: {produce_id: produce_recipe.produce.id}), data: {turbo_method: :post}, class:"iconfav" do %>
       <%= render "like_button", produce_recipe: produce_recipe %>
+     
       <% end %>
       <img class="card-img-top" src="<%= produce_recipe.recipe.img %>" alt="Card image cap">
       <div class="card-body">
