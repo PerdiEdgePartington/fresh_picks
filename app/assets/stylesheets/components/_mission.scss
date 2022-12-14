@@ -1,7 +1,13 @@
-.parent-mission {
+.mission-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   }
+
+.mission-child {
+  border: 1px solid black;
+  padding: 30px;
+  width: 220px;
+}
