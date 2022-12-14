@@ -1,11 +1,10 @@
 #cards{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 26px 0;
-  justify-content: space-between;
+  display: grid;
   width: 1546px;
   margin: 0 auto;
-
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 35px;
 }
 .card-container{
   display:flex;
