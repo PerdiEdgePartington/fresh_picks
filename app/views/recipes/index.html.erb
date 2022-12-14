@@ -5,19 +5,19 @@
 
 
 
-<div class="container">
+<div class="container-recipe">
   <div id="cards">
     <% @produce_recipes.each do |produce_recipe| %>
     <div class="card" style="width: 22rem;">
     <div>
       <%= link_to toggle_favorite_recipe_path(produce_recipe.recipe, params: {produce_id: produce_recipe.produce.id}), data: {turbo_method: :post}, class:"iconfav" do %>
       <%= render "like_button", produce_recipe: produce_recipe %>
-     
+
       <% end %>
       <img class="card-img-top" src="<%= produce_recipe.recipe.img %>" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"><%= produce_recipe.recipe.name %></h5>
-        <p class="card-text"><%= produce_recipe.recipe.description %></p>
+        <p class="card-text"><%= produce_recipe.recipe.description.truncate(114) %></p>
       </div>
     </div>
     <div class= "recipe-btn" style= "background-color: transparent; text-align: center">
@@ -27,3 +27,5 @@
     <% end %>
   </div>
 </div>
+
+
