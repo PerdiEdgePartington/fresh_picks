@@ -11,7 +11,7 @@
           </div>
           <% end %>
            <%= link_to "produce?name=february", class: "link" do %>
-          <div class="clickable spring">
+          <div class="clickable winter">
             <small>February</small>
           </div>
           <% end %>
@@ -26,7 +26,7 @@
           </div>
           <% end %>
            <%= link_to "produce?name=may", class: "link" do %>
-          <div class="clickable summer">
+          <div class="clickable spring">
             <small>May</small>
           </div>
           <% end %>
@@ -41,7 +41,7 @@
           </div>
           <% end %>
           <%= link_to "produce?name=august", class: "link" do %>
-          <div class="clickable autumn">
+          <div class="clickable summer">
             <small>August</small>
           </div>
           <% end %>
@@ -56,7 +56,7 @@
           </div>
           <% end %>
           <%= link_to "produce?name=november", class: "link" do %>
-          <div class="clickable winter">
+          <div class="clickable autumn">
             <small>November</small>
           </div>
           <% end %>
@@ -66,9 +66,9 @@
           </div>
           <% end %>
         </div>
-          <div class="grid">
+          <%# <div class="grid">
             <%= button_to "view all produce", produce_index_path, {:class => "home-btn", :method => :get} %>
-          </div>
+          <%# </div> %>
       </div>
     </div>
   </div>

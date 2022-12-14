@@ -1,23 +1,20 @@
 <div class="grid-container">
 
 <div class="grid-child-1">
-<%= cl_image_tag @produce.photo.key, width: 600, height: 750 %>
+<%= cl_image_tag @produce.photo.key, width: 600, height: 700 %>
 </div>
 
 <div class="grid-child-2">
 <h1 class= "show-h1"><%= @produce.name %></h1>
-      <p class="description_p"><%= @produce.description %></p>
+      <p class="description_p"> <%= @produce.description %></p>
 
     <br>
 
       <div class="recipe-link">
-        <p>Think I sound good? Click here for recipes! <i class="fa-solid fa-arrow-right"></i> <%= button_to "How to eat me!", produce_recipes_path(@produce), {:class => "recipe-btn", :method => :get} %> </p>
+        <p><strong>Think I sound good? Click here for recipes! </strong><i class="fa-solid fa-arrow-right"></i> <%= button_to "How to eat me!", produce_recipes_path(@produce), {:class => "recipe-btn", :method => :get} %> </p>
       </div>
 
-      <br>
-       <br>
-        <br>
-         <br>
+
 
       <div class="nutrition-card">
         <h2>What is in me?</h2>

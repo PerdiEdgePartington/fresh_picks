@@ -60,12 +60,14 @@
 .recipe-link {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20%;
+  margin-left: 21%;
+  margin-top: 20px;
+  margin-bottom: 37px;
 }
 
 .recipe-link p{
   font-family: $p-font;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
