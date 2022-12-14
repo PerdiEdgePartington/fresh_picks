@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
   grid-gap: 0px;
+  margin: 60px;
 
 }
 
@@ -14,8 +15,7 @@
 
 .grid-child-2 {
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 20px;
+  padding-top: 8%;
   background-color: white;
   text-align: left;
 
@@ -26,8 +26,12 @@
   font-size: 50px;
   color: #026721;
   text-align: center;
+  margin-bottom: 4%;
   }
 
-  .grid-child-2 p{
-    text-align: center;
+  .grid-child-2 .description_p{
+    width: 50%;
+    margin: auto;
+    font-family: $p-font;
+    font-size: 18px;
   }
