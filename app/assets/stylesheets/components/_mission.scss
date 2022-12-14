@@ -1,13 +1,68 @@
-.mission-parent {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
+.home-container h2 {
+  text-align: center;
+}
+.text-home .h6 {
+  text-align: center;
+  color: #026721;
+}
 
-.mission-child {
-  border: 1px solid black;
-  padding: 30px;
-  width: 220px;
+// Specific CSS for your home-page
+.home-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  min-width: none;
+  max-width: none;
+}
+
+.home-container .simple-frame p{
+text-align: center;
+}
+// even blocks have grey background
+.home-container:nth-child(2n+1) {
+  background-color: $grey;
+}
+
+.home-container h5 {
+  color: #026721;
+}
+
+.gd-choice {
+  color: $green;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-home p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #026721;
+}
+
+.text-home h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  width: 354px;
+  height: 150px;
+  left: 18px;
+  top: 91.32px;
+}
+
+.home-card {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 25px;
+}
+
+.home-card img {
+  width: 200px;
+  height: 150px;
+  margin: 12px;
 }
