@@ -1,5 +1,5 @@
 class ProduceController < ApplicationController
-  skip_before_action :authenticate_user!, only: :index
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @produce = Produce.all
