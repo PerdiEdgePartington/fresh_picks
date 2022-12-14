@@ -26,7 +26,7 @@ class ProduceController < ApplicationController
       sql_query = <<~SQL
       seasons.name @@ :query
       SQL
-      @produce = Produce.joins(:produce_seasons).joins(:seasons).where(sql_query, query: "%#{@search}%")
+      @produce = Produce.joins(:produce_seasons).joins(:seasons).where(sql_query, query: "%#{@search}%").distinct
     end
   end
 end
