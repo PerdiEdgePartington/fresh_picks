@@ -32,7 +32,12 @@
 .winter {
   padding: 30px;
   width: 220px;
-  background-color: rgba(235, 227, 199, 0.3);
+  // background-color: rgba(235, 227, 199, 0.3);
+  background-image: url(
+    https://img.freepik.com/premium-vector/snowflakes-falling-white-background-horizontal-christmas-happy-new-year-theme-silver-falling-snowflakes-banner-gift-card-party-invitation-partner-compliment-special-business-offers_121461-4671.jpg?w=2000);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid black;
   color: black;
   margin-right: 10px;
@@ -46,7 +51,11 @@
 .spring {
   padding: 30px;
   width: 220px;
-  background-color: rgba(167, 211, 144, 0.3);
+  // background-color: rgba(167, 211, 144, 0.3);
+  background-image: url(https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid black;
   color: black;
   margin-right: 10px;
@@ -60,7 +69,11 @@
 .summer {
   padding: 30px;
   width: 220px;
-  background-color: rgba(252, 174, 134, 0.3);
+  // background-color: rgba(252, 174, 134, 0.3);
+  background-image: url(https://www.photocase.com/photos/3317348-border-of-lovely-summer-garden-flowers-with-pretty-sunflowers-on-white-background-top-view-photocase-stock-photo-large.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid black;
   color: black;
   margin-right: 10px;
@@ -74,7 +87,11 @@
 .autumn {
   padding: 30px;
   width: 220px;
-  background-color: rgba(247, 139, 138, 0.3);
+  // background-color: rgba(247, 139, 138, 0.3);
+  background-image: url(https://il8.picdn.net/shutterstock/videos/3552230/thumb/7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid black;
   color: black;
   margin-right: 10px;
