@@ -1,21 +1,8 @@
-.banner{
-  background-image: url("https://i.pinimg.com/originals/d2/40/41/d24041f9ff122f1c52f0c73f5a9fe703.jpg");
-  height: 550px;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 9px 12px 17px -3px rgba(247,245,245,0.59);
-
-}
-
-
-
 
 .recipe-btn{
   border-radius: 8px;
   padding: 5px;
   background-color: $green;
-  font-family: $p-font;
   margin-left: 10px;
 }
 
@@ -59,7 +46,8 @@
   background-color: white;
   width: 400px;
   height: 235px;
-  margin-left: 175px;
+  margin: auto;
+  background-color: #EFEFEF;
 
   li{
     font-family: $p-font;
@@ -69,9 +57,15 @@
   }
 }
 
-.recipe-link{
-display: flex;
-flex-wrap: wrap;
+.recipe-link {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20%;
+}
+
+.recipe-link p{
+  font-family: $p-font;
+  font-size: 18px;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
