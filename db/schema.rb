@@ -61,12 +61,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_13_104343) do
   end
 
   create_table "favourites", force: :cascade do |t|
+    t.bigint "recipes_id", null: false
+    t.bigint "users_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.bigint "recipe_id", null: false
-    t.index ["recipe_id"], name: "index_favourites_on_recipe_id"
-    t.index ["user_id"], name: "index_favourites_on_user_id"
+    t.index ["recipes_id"], name: "index_favourites_on_recipes_id"
+    t.index ["users_id"], name: "index_favourites_on_users_id"
   end
 
   create_table "meetings", force: :cascade do |t|
@@ -125,6 +125,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_13_104343) do
     t.string "name"
   end
 
+  create_table "stocks", force: :cascade do |t|
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -140,8 +146,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_13_104343) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "favourites", "recipes"
-  add_foreign_key "favourites", "users"
+  add_foreign_key "favourites", "recipes", column: "recipes_id"
+  add_foreign_key "favourites", "users", column: "users_id"
   add_foreign_key "meetings", "users"
   add_foreign_key "produce_recipes", "produces"
   add_foreign_key "produce_recipes", "recipes"
