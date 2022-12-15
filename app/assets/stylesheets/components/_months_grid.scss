@@ -111,19 +111,17 @@
   transform: scale(1.1);
 }
 
-.clickable:hover i {
-  color: #52ACF4;
-}
+
 
 .clickable.active {
-  color: inherit;
+  color: black;
   border-color: inherit;
   border: 3px solid black;
 }
 
-.clickable.active i {
-  color: #52ACF4;
-}
+// .clickable.active i {
+//   color: black;
+// }
 
 .frame button{
   width: fit-content;
@@ -155,6 +153,8 @@
 .link {
   text-decoration: none;
 }
+
+
 
 h6{
   font-family: $p-font;
