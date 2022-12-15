@@ -6,7 +6,7 @@
   <div class="container-recipe">
     <div id="cards">
       <% @recipes.each do |recipe| %>
-      <div class="card" style="width: 22rem;">
+      <div class="card">
       <div>
       <% if !current_user %>
         <%= link_to new_user_session_path, class:"iconfav" do %>
