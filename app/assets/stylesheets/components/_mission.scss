@@ -1,10 +1,12 @@
 .home-container h2 {
   text-align: center;
+  font-family: $p-font;
 }
 .home-card h6 {
   text-align: center;
   // color: #026721;
-  font-size: 1.2rem;
+  font-size: 20px;
+  font-family: $p-font;
 }
 
 // Specific CSS for your home-page
@@ -13,10 +15,13 @@
   padding-bottom: 32px;
   min-width: none;
   max-width: none;
+  font-family: $p-font;
 }
 
 .home-container .simple-frame p{
 text-align: center;
+font-family: $p-font;
+font-size: 20px;
 }
 // even blocks have grey background
 .home-container:nth-child(2n+1) {
@@ -25,6 +30,7 @@ text-align: center;
 
 .home-container h5 {
   color: #026721;
+  font-family: $p-font;
 }
 
 .gd-choice {
@@ -32,10 +38,12 @@ text-align: center;
   font-size: 12px;
   font-weight: 500;
   font-style: normal;
+  font-family: $p-font;
+  font-size: 20px;
 }
 
 .text-home p {
-  font-style: normal;
+  font-family: $p-font;
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -51,6 +59,7 @@ text-align: center;
   height: 150px;
   left: 18px;
   top: 91.32px;
+  font-family: $p-font;
 }
 
 .home-card {
@@ -60,6 +69,11 @@ text-align: center;
   align-items: center;
   text-align: center;
   margin: 0 25px;
+
+    p{
+      font-size: 18px;
+      font-family: $p-font;
+    }
 }
 
 .home-card img {
