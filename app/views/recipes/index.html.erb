@@ -8,7 +8,7 @@
 <div class="container-recipe">
   <div id="cards">
     <% @produce_recipes.each do |produce_recipe| %>
-    <div class="card" style="width: 22rem;">
+    <div class="card">
     <div>
       <% if !current_user %>
         <%= link_to new_user_session_path, class:"iconfav" do %>
@@ -19,6 +19,8 @@
           <%= render "like_button", produce_recipe: produce_recipe %>
         <% end %>
       <% end %>
+
+
 
       <img class="card-img-top" src="<%= produce_recipe.recipe.img %>" alt="Card image cap">
       <div class="card-body">
