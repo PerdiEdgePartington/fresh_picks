@@ -5,7 +5,7 @@
 
 
 
-<div class="container">
+<div class="container-recipe">
   <div id="cards">
     <% @produce_recipes.each do |produce_recipe| %>
     <div class="card" style="width: 22rem;">
@@ -23,7 +23,7 @@
       <img class="card-img-top" src="<%= produce_recipe.recipe.img %>" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"><%= produce_recipe.recipe.name %></h5>
-        <p class="card-text"><%= produce_recipe.recipe.description %></p>
+        <p class="card-text"><%= produce_recipe.recipe.description.truncate(114) %></p>
       </div>
     </div>
     <div class= "recipe-btn" style= "background-color: transparent; text-align: center">

@@ -1,0 +1,5 @@
+meta_product_name: "FreshPicks"
+meta_title: "FreshPicks - Your guide for seasonal, climate-friendly eating!"
+meta_description: "Discover which fruit and vegetables are in season and take a look at recipe options containing your chosen produce."
+meta_image: "cover.png" # should exist in `app/assets/images/`
+

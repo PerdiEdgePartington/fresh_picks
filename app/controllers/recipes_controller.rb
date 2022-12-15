@@ -9,12 +9,17 @@ class RecipesController < ApplicationController
   end
 
   def toggle_favorite
-      @recipe = Recipe.find_by(id: params[:id])
-      current_user.favorited?(@recipe) ?
-    current_user.unfavorite(@recipe) : current_user.favorite(@recipe)
-    redirect_to  produce_recipes_path(params[:produce_id])
+    @recipe = Recipe.find_by(id: params[:id])
+    if current_user.favorited?(@recipe)
+      current_user.unfavorite(@recipe)
+      flash[:alert] = "The Recipe was removed from My Picks"
+    else
+      current_user.favorite(@recipe)
+      flash[:notice] = "The Recipe was added to My Picks"
+    end
+    redirect_to produce_recipes_path(params[:produce_id])
   end
-
+   # do a if else statment
 end
 
   # def scraping(ingredient)
