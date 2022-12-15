@@ -2,6 +2,7 @@ class RecipesController < ApplicationController
   before_action :authenticate_user!, only: :toggle_favorite
   require "open-uri"
   require "nokogiri"
+  include ActionView::Helpers::UrlHelper
 
   def index
     @produce = Produce.find(params[:produce_id])
@@ -17,7 +18,13 @@ class RecipesController < ApplicationController
       current_user.favorite(@recipe)
       flash[:notice] = "The Recipe was added to My Picks"
     end
-    redirect_to produce_recipes_path(params[:produce_id])
+    redirect_to request.referrer
+    # if current_page?(produce_recipes_path(params[:produce_id]))
+    #   redirect_to produce_recipes_path(params[:produce_id])
+    # else
+    #   redirect_to dashboard_path
+    # end
+
   end
    # do a if else statment
 end
