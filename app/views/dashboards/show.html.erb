@@ -8,6 +8,15 @@
       <% @recipes.each do |recipe| %>
       <div class="card" style="width: 22rem;">
       <div>
+      <% if !current_user %>
+        <%= link_to new_user_session_path, class:"iconfav" do %>
+          <%= render "like_button", recipe: recipe %>
+        <% end %>
+      <% else %>
+        <%= link_to toggle_favorite_recipe_path(recipe, params: {produce_id:recipe.produce.ids.flatten}), data: {turbo_method: :post}, class:"iconfav" do %>
+          <%= render "like_button", recipe: recipe %>
+        <% end %>
+      <% end %>
         <img class="card-img-top" src="<%= recipe.img %>" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%= recipe.name %></h5>
