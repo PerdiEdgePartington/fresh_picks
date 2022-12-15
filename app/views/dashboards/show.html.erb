@@ -3,7 +3,7 @@
   <h2 class="dash-h1">My favorite recipes</h2>
   </div>
 
-  <div class="container">
+  <div class="container-recipe">
     <div id="cards">
       <% @recipes.each do |recipe| %>
       <div class="card" style="width: 22rem;">
@@ -11,7 +11,7 @@
         <img class="card-img-top" src="<%= recipe.img %>" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"><%= recipe.name %></h5>
-          <p class="card-text"><%= recipe.description %></p>
+          <p class="card-text"><%= recipe.description.truncate(114) %></p>
         </div>
       </div>
       <div class= "recipe-btn" style= "background-color: transparent; text-align: center">

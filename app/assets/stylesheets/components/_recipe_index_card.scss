@@ -1,10 +1,10 @@
 #cards{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 26px 0;
-  justify-content: space-between;
-  width: 1150px;
-
+  display: grid;
+  width: 1546px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 35px;
 }
 .card-container{
   display:flex;
@@ -53,6 +53,19 @@
   }
 
 .h1_recipe{
-  margin-top: 15px;
-  margin-bottom: 15px
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+.container-recipe{
+  max-width: 100% !important;
+  margin: auto !important;
+}
+
+.card-text{
+  text-align: left;
+}
+
+.card-title{
+  text-align: left;
 }
