@@ -1,11 +1,11 @@
 <div class="index-card">
-  <h2> <%= produce.name %></h2>
+  <h3> <%= produce.name %></h3>
   <% if produce.photo.attached? %>
      <%= cl_image_tag produce.photo.key %>
    <% end %>
     <div class="descriptions">
-      <h2> <%= produce.name %></h2>
-      <p><%= produce.description %></p>
+      <h3> <%= produce.name %></h3>
+      <p><%= produce.description.truncate(300) %></p>
       <%= button_to "More about me!", produce_path(produce), {:class => "card-btn", :method => :get} %>
      </div>
 </div>

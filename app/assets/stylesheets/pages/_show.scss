@@ -21,7 +21,7 @@
 
   }
   p{
-    font-family: $p-font;
+    font-family: $header-font;
     color: black;
     font-size: 22px;
   }
@@ -42,15 +42,15 @@
   padding: 15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 5px;
   background-color: white;
   width: 400px;
-  height: 235px;
+  height: 270px;
   margin: auto;
   background-color: #EFEFEF;
 
   li{
-    font-family: $p-font;
+    font-family: $header-font;
+    font-size: 20px;
   }
   h2{
     font-family: $header-font;
@@ -60,13 +60,13 @@
 .recipe-link {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 21%;
+  margin-left: 13%;
   margin-top: 20px;
   margin-bottom: 37px;
 }
 
 .recipe-link p{
-  font-family: $p-font;
+  font-family: $header-font;
   font-size: 20px;
 }
 
