@@ -19,7 +19,7 @@ class RecipesController < ApplicationController
     end
     redirect_to produce_recipes_path(params[:produce_id])
   end
-
+   # do a if else statment
 end
 
   # def scraping(ingredient)
