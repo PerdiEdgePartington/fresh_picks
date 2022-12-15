@@ -11,9 +11,8 @@ footer {
   background: $green;
   height: auto;
   width: 100vw;
-  font-family: "Open Sans";
-  // padding-top: 40px;
-  color: #0c330d;
+  font-family: "auto";
+  color: white;
   margin-top: 70px;
 }
 
@@ -50,7 +49,7 @@ footer {
 
 }
 .footer-links a {
-  color: #0c330d;
+  color: white;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -59,7 +58,7 @@ footer {
 }
 
 .footer-links a:hover {
-  opacity: 1;
+  color: #0c330d;
 
 }
 
